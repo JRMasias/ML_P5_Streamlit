@@ -20,3 +20,15 @@ with st.expander('Data'):
 
 with st.expander('Data Visualization'):
   st.scatter_chart(data=df, x='Voting Eligible Population (VEP)', y='Registered Voters', color='Turnout')
+
+with st.sidebar:
+  st.header('Input features')
+  
+  # NUMERICAL FEATURES
+  # Year, Voting Age Population (VAP), Voting Eligible Population (VEP), Registered Voters, Turnout as VAP, Turnout as VEP, Men Voters, Women Voters,
+  # Age 18-24, Age 25-44, Age 45-64, Age 65+, High School/GED, Some College/ASC, BAS or more, White Registered, White Voted, Black Registered, Black Voted,
+  # Asian Registered, Asian Voted, Hispanic Registered, Hispanic % Voted, Average Income
+  year = st.number_input('Year', value=)
+
+  # CATEGORICAL FEATURES
+  # House Majority_Republican, Senate Majority_Republican, Current Presidential Party_Republican
