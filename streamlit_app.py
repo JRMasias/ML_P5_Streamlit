@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
+from sklearn.linear_model import Lasso
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
 
 st.title('🤖 Machine Learning App For Project 5')
 
@@ -91,4 +94,11 @@ with st.sidebar:
 input_df = pd.DataFrame(data, index=[0])
 input_features = pd.concat([input_df, X_raw], axis=0)
 
+#Model training and inference
 
+# Train the model
+model = make_pipeline(StandardScaler(), Lasso(alpha=0.1, random_state=42))
+model.fit(input_features, y_raw)
+
+# Make predictions
+model.predict(input_features[:1])
