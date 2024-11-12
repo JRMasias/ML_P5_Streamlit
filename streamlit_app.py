@@ -87,6 +87,6 @@ with st.sidebar:
     'Current Presidential Party_Republican', True if current_party == "Republican" else False,
   }
 
-  input_df = pd.DatFrame(data, index=[0])
+  input_df = pd.DataFrame(data, index=[0])
   
 input_df
