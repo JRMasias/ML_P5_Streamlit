@@ -68,7 +68,7 @@ with st.sidebar:
     'Women Voters', women,
     'Age 18-24', age18_24,
     'Age 25-44', age25_44,
-    'Age 44-64', age44_64,
+    'Age 44-64', age45_64,
     'Age 65+', age65,
     'High School/GED', hs_ged,
     'Some College/ASC', some_college,
