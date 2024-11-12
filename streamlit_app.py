@@ -9,3 +9,11 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/JRMasias/ML_P5_Streamlit/refs/heads/master/dataset.csv')
   df
+
+  st.write('**X**')
+  X = df.drop('Turnout', axis=1)
+  X
+
+st.write('**Y**')
+y = df.Turnout
+y
