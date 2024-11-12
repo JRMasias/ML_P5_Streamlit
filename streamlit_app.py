@@ -97,9 +97,12 @@ input_features = pd.concat([input_df, X_raw], axis=0)
 #Model training and inference
 
 # Train the model
-X = input_features[1:]
+X = input_features.iloc[1:]
+input_data = input_features.iloc[0:1]
+
 model = make_pipeline(StandardScaler(), Lasso(alpha=0.1, random_state=42))
 model.fit(X, y_raw)
 
 # Make predictions
-#prediction = model.predict()
+prediction = model.predict(input_data)
+st.write(f"Predicted Turnout: {prediction[0]:.0f}")
