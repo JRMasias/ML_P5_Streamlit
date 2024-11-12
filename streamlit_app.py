@@ -12,16 +12,17 @@ with st.expander('Data'):
   df
 
   st.write('**X**')
-  X = df.drop('Turnout', axis=1)
-  X
+  X_raw = df.drop('Turnout', axis=1)
+  X_raw
 
   st.write('**Y**')
-  y = df.Turnout
-  y
+  y_raw = df.Turnout
+  y_raw
 
 with st.expander('Data Visualization'):
   st.scatter_chart(data=df, x='Voting Eligible Population (VEP)', y='Registered Voters', color='Turnout')
 
+# Input Features
 with st.sidebar:
   st.header('Input features')
   
@@ -87,7 +88,7 @@ with st.sidebar:
     'Current Presidential Party_Republican': True if current_party == "Republican" else False,
   }
 
-  input_df = pd.DataFrame(data, index=[0])
-  input_features = pd.concat([input_df, X], axis=0)
-  
-input_df
+input_df = pd.DataFrame(data, index=[0])
+input_features = pd.concat([input_df, X], axis=0)
+
+
