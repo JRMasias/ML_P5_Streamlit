@@ -97,8 +97,9 @@ input_features = pd.concat([input_df, X_raw], axis=0)
 #Model training and inference
 
 # Train the model
+X = input_features[1:]
 model = make_pipeline(StandardScaler(), Lasso(alpha=0.1, random_state=42))
-model.fit(input_features, y_raw)
+model.fit(X, y_raw)
 
 # Make predictions
-#prediction = model.predict(input_features[:1])
+#prediction = model.predict()
