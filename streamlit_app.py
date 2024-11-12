@@ -25,8 +25,8 @@ with st.expander('Data'):
 
 # Data Visualization
 with st.expander('Data Visualization'):
-    st.write('Area Chart')
-    st.area_chart(df)
+    st.write('All Data')
+    st.scatter_chart(df)
     
     st.write('VEP & Turnout')
     st.scatter_chart(data=df, x='Voting Eligible Population (VEP)', y='Registered Voters', color='Turnout')
