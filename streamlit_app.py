@@ -17,3 +17,6 @@ with st.expander('Data'):
   st.write('**Y**')
   y = df.Turnout
   y
+
+with st.expander('Data Visualization'):
+  st.scatter_chart(data=df, x='Voting Eligible Population (VEP)', y='Turnout')
