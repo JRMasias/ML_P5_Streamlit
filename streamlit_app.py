@@ -29,7 +29,7 @@ with st.expander('Data Visualization'):
     st.scatter_chart(data=df, x='Voting Age Population (VAP)', y='Turnout')
     
     st.write('VEP & Turnout')
-    st.scatter_chart(data=df, x='Voting Eligible Population (VEP)', y='Registered Voters', color='Turnout')
+    st.scatter_chart(data=df, x='Voting Eligible Population (VEP)', y='Turnout')
 
 # Sidebar for Input Features
 with st.sidebar:
