@@ -82,9 +82,9 @@ with st.sidebar:
     'Hispanic Registered', hisp_reg,
     'Hispanic % Voted', hisp_vote,
     'Average Income', avg_income,
-    'House Majority_Republican', True if house_majority = "Republican" else False,
-    'Senate Majority_Republican', True if senate_majority = "Republican" else False,
-    'Current Presidential Party_Republican', True if current_party = "Republican" else False,
+    'House Majority_Republican', True if house_majority == "Republican" else False,
+    'Senate Majority_Republican', True if senate_majority == "Republican" else False,
+    'Current Presidential Party_Republican', True if current_party == "Republican" else False,
   }
 
   input_df = pd.DatFrame(data, index=[0])
