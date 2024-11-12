@@ -14,6 +14,6 @@ with st.expander('Data'):
   X = df.drop('Turnout', axis=1)
   X
 
-st.write('**Y**')
-y = df.Turnout
-y
+  st.write('**Y**')
+  y = df.Turnout
+  y
