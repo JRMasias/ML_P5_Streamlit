@@ -1,13 +1,10 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 🤖 Machine Learning Project 5 Streamlit App 
 
-Description of the app ...
+COSC-3380-001 Fall '24 ACC Machine Learning project 5 streamlit app. Voter Turnout.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ML_P5_Streamlit.streamlit.app/)
 
 ## GitHub Codespaces
 
