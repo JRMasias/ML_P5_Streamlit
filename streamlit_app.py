@@ -115,4 +115,7 @@ model.fit(X, y_raw)
 
 # Make predictions with the user input
 prediction = model.predict(input_data)
-st.write(f"Predicted Turnout: {prediction[0]:.2f}")
+
+# Display Prediction
+st.title('Predicted Turnout')
+st.success(f"{prediction[0]:.0f}")
