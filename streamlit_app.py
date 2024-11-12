@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from datetime import datetime
 
 st.title('🤖 Machine Learning App For Project 5')
 
@@ -28,7 +29,7 @@ with st.sidebar:
   # Year, Voting Age Population (VAP), Voting Eligible Population (VEP), Registered Voters, Turnout as VAP, Turnout as VEP, Men Voters, Women Voters,
   # Age 18-24, Age 25-44, Age 45-64, Age 65+, High School/GED, Some College/ASC, BAS or more, White Registered, White Voted, Black Registered, Black Voted,
   # Asian Registered, Asian Voted, Hispanic Registered, Hispanic % Voted, Average Income
-  year = st.number_input('Year', value=)
+  year = st.number_input('Year', value=datetime.now().year)
 
   # CATEGORICAL FEATURES
   # House Majority_Republican, Senate Majority_Republican, Current Presidential Party_Republican
