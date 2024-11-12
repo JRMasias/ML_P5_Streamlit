@@ -101,4 +101,4 @@ model = make_pipeline(StandardScaler(), Lasso(alpha=0.1, random_state=42))
 model.fit(input_features, y_raw)
 
 # Make predictions
-prediction = model.predict(input_features[:1])
+#prediction = model.predict(input_features[:1])
