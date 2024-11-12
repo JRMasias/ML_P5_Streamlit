@@ -53,6 +53,6 @@ with st.sidebar:
 
   # CATEGORICAL FEATURES
   # House Majority_Republican, Senate Majority_Republican, Current Presidential Party_Republican
-  house_majority = st.selectbox('House Majority', "Democrat", "Republican")
-  senate_majority = st.selectbox('Senate Majority', "Democrat", "Republican")
-  current_party = st.selectbox('Current Presidential Party', "Democrat", "Republican")
+  house_majority = st.selectbox('House Majority', ("Democrat", "Republican"))
+  senate_majority = st.selectbox('Senate Majority', ("Democrat", "Republican"))
+  current_party = st.selectbox('Current Presidential Party', ("Democrat", "Republican"))
