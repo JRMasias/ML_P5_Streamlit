@@ -52,7 +52,41 @@ with st.sidebar:
   avg_income = st.number_input('Average Income', value=None, placeholder="Enter a value")
 
   # CATEGORICAL FEATURES
-  # House Majority_Republican, Senate Majority_Republican, Current Presidential Party_Republican
   house_majority = st.selectbox('House Majority', ("Democrat", "Republican"))
   senate_majority = st.selectbox('Senate Majority', ("Democrat", "Republican"))
   current_party = st.selectbox('Current Presidential Party', ("Democrat", "Republican"))
+
+  # Create a dataframe for input features
+  data = {
+    'Year', year,
+    'Voting Age Population (VAP)', vap,
+    'Voting Eligible Population (VEP)', vep,
+    'Registered Voters', registered,
+    'Turnout as VAP', vap_turnout,
+    'Turnout as VEP', vep_turnout,
+    'Men Voters', men,
+    'Women Voters', women,
+    'Age 18-24', age18_24,
+    'Age 25-44', age25_44,
+    'Age 25-44', age44_64,
+    'Age 25-44', age65,
+    'High School/GED', hs_ged,
+    'Some College/ASC', some_college,
+    'BAS or more', bas,
+    'White Registered', white_reg,
+    'White Voted', white_vote,
+    'Black Registered', black_reg,
+    'Black Voted', black_vote,
+    'Asian Registered', asian_reg,
+    'Asian Voted', asian_vote,
+    'Hispanic Registered', hisp_reg,
+    'Hispanic % Voted', hisp_vote,
+    'Average Income', avg_income,
+    'House Majority_Republican', True if house_majority = "Republican" else False,
+    'Senate Majority_Republican', True if senate_majority = "Republican" else False,
+    'Current Presidential Party_Republican', True if current_party = "Republican" else False,
+  }
+
+  input_df = pd.DatFrame(data, index=[0])
+  
+input_df
